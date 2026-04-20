@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Atividade - 3º BPM/I</title>
+    <style>
+        :root {
+            --cor-azul: #0056b3;       
+            --cor-ouro: #d4af37;       
+            --cor-verde-oliva: #556b2f; 
+            --cor-vermelho: #b30000; /* Adicionada para o botão sair */
+            --fundo-pastel: #fdfcf0;   
+            --texto-principal: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: var(--fundo-pastel);
+            padding: 40px;
+            border-radius: 20px;
+            border: 3px solid var(--cor-ouro);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            text-align: center;
+            width: 90%; /* Ajuste para telas pequenas */
+            max-width: 350px;
+        }
+
+        .brasao-img {
+            width: 160px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            color: var(--texto-principal);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 0.95rem;
+            color: #555;
+            font-weight: 400;
+            margin-top: 8px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        /* Botões estilizados como links para melhor SEO/Acessibilidade */
+        .btn {
+            width: 85%;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            text-decoration: none; /* Remove sublinhado de link */
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--cor-azul);
+            box-shadow: 0 3px 6px rgba(0, 86, 179, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--cor-verde-oliva);
+            box-shadow: 0 5px 12px rgba(85, 107, 47, 0.4);
+            transform: scale(1.03);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .btn-voltar {
+            margin-top: 15px;
+            font-size: 0.75rem;
+            color: #888;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: none;
+            border: none;
+            transition: color 0.2s;
+        }
+
+        .btn-voltar:hover {
+            color: var(--cor-vermelho);
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 35px;
+            font-size: 0.65rem;
+            color: #666;
+            font-weight: 600;
+            line-height: 1.6;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        footer span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="Brasão 3BC.png" alt="Brasão 3BC" class="brasao-img">
+        
+        <h1>Consultar Escalas</h1>
+        <h2>Selecione a Atividade:</h2>
+
+        <div class="form-group">
+            <a href="home_dejem.html" class="btn">Atividade DEJEM</a>
+            <a href="home_delegada.html" class="btn">Atividade Delegada</a>
+            <a href="index.html" class="btn-voltar">Sair</a>
+        </div>
+
+        <footer>
+            <span>SECRETARIA DE SEGURANÇA PÚBLICA</span>
+            <span>POLÍCIA MILITAR DO ESTADO DE SÃO PAULO</span>
+            <span>3º BPM/I - CEL PM SPANÓ</span>
+        </footer>
+    </div>
+
+</body>
+</html>
